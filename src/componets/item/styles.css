@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: #aaa;
+  border-bottom-width: 1px;
+  padding: 10px;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}

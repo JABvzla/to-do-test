@@ -1,0 +1,11 @@
+.checkbox {
+  width: 25px;
+  height: 25px;
+  transition: background-color 0.3s;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+
+.checkbox-true {
+  background-color: #0b0;
+}

@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Add from "./componets/input-add";
+import List from "./componets/list";
+import "./App.css";
 
 function App() {
+  const [todoList, setTodoList] = useState([]);
+  const add = (text) => setTodoList([{ text, checked: false }, ...todoList]);
+  const toggle = (index) => {
+    const newData = todoList.concat();
+    const item = newData[index];
+    item.checked = !item.checked;
+    setTodoList(newData);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Add onAdd={add} />
+      <List todoList={todoList} onChecked={toggle} />
     </div>
   );
 }

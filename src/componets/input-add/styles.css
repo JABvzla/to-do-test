@@ -1,0 +1,15 @@
+.input-add-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.input-add {
+  flex-grow: 1;
+}
+
+.button-add {
+  margin-left: 10px;
+}
+
+.button-add:hover {
+  cursor: pointer;
+}
