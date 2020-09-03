@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dont should add empty an item 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="card input-add-wrapper"
+    >
+      <input
+        class="input-add"
+        data-testid="input-add"
+        type="text"
+        value=""
+      />
+      <input
+        class="button-add"
+        data-testid="button-add"
+        type="button"
+        value="Agregar"
+      />
+    </div>
+    <div
+      style="color: rgb(170, 170, 170); text-align: center;"
+    >
+      No hay nada por hacer :'(
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="card input-add-wrapper"
+    >
+      <input
+        class="input-add"
+        data-testid="input-add"
+        type="text"
+        value=""
+      />
+      <input
+        class="button-add"
+        data-testid="button-add"
+        type="button"
+        value="Agregar"
+      />
+    </div>
+    <div
+      style="color: rgb(170, 170, 170); text-align: center;"
+    >
+      No hay nada por hacer :'(
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,18 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Add from "./componets/input-add";
 import List from "./componets/list";
 import "./App.css";
+import useTodo from "./useToDo";
 
-function App() {
-  const [todoList, setTodoList] = useState([]);
-  const add = (text) => setTodoList([{ text, checked: false }, ...todoList]);
-  const toggle = (index) => {
-    const newData = todoList.concat();
-    const item = newData[index];
-    item.checked = !item.checked;
-    setTodoList(newData);
-  };
-
+function App({add, todoList, toggle}) {
   return (
     <div className="App">
       <Add onAdd={add} />
@@ -21,4 +13,6 @@ function App() {
   );
 }
 
-export default App;
+const conectedApp = () => <App {...useTodo()} />
+
+export default conectedApp;

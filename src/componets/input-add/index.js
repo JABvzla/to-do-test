@@ -8,12 +8,14 @@ function InputAdd({ onAdd }) {
   return (
     <div className={"card input-add-wrapper"}>
       <input
+        data-testid={"input-add"}
         className={"input-add"}
         type="text"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
       />
       <input
+        data-testid={"button-add"}
         className={"button-add"}
         type="button"
         value={"Agregar"}
